@@ -1,0 +1,697 @@
+@import url("global.css");
+
+@media screen and (min-width:481px) and (max-width:1249px) {
+    
+
+    /* --- Nav Bar Container --- */
+    
+    .navbar_container {
+    
+        display: flex;
+        flex: row wrap;
+    
+        padding: 10px;
+        width: 100%;
+        background-color: var(--nav-bg-color);
+
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
+    
+    }
+    
+    /* --- Navbar content --- */
+    
+    .navbar_content {
+    
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center; 
+        justify-content: space-between; 
+
+
+        
+        letter-spacing: 2px;
+        
+    }
+    
+    .navbar_content-image {
+    
+        width: 100px;
+    
+    }
+    
+    
+    /* --- Navbar_text --- */
+    
+    .navbar_text {
+
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+    
+        font-size: small;
+        
+               
+    }
+    
+    .navbar_text a {
+    
+        color: var(--text-color);
+    
+    }
+    
+    .navbar_text-button {
+    
+        padding: 8px 26px;
+        text-align: center;
+        transition: 0.5s;
+        color: var(--text-color);
+    
+    }
+    
+    .navbar_text-button:hover {
+      
+        background-color: var(--text-color) ;
+        color: black;
+        
+    } 
+
+    
+
+/* --- Main Container --- */
+
+.main_container {
+
+    width: 100%;
+    margin-top: 51px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+
+/* --- Main-Scetion1 --- */
+
+.main_section1 {
+
+    width: 100%;
+    padding: 100px 40px 200px 40px;
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background: 
+    linear-gradient(0deg, rgb(2, 2, 40, 1) 40%, rgba(2,2,40,0) 45%),
+    linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position:0% 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position:0% 50%;
+    }
+}
+
+
+/* seciton1 - imagens container*/
+
+.section1-images {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+/* seciton1 - imagens itens */
+
+.section1_item {
+
+object-fit: contain;
+
+}
+
+/* seciton1 - title */
+
+.section1_title {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+
+
+    color: var(--text-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.title_small {
+
+    font-weight: lighter;
+}
+
+
+/* --- Secetion1 separation ---  */
+
+.section1_separeation {
+
+    width: 70%;
+    height: 5px;
+    max-width: 700px;
+    background: var(--divider-bg-color);
+    border-radius: 2px;
+}
+
+
+
+/* --- Section1 price  ---*/
+
+.section1_price {
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    color: var(--text-color);
+    text-align: center;
+    
+
+}
+
+
+.price_value {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.price_value--lighter {
+
+    font-size: 1rem;
+    font-weight: 300;
+
+    align-self: last baseline;
+    
+}
+
+/* --- section1 button subscribe --- */
+
+.section1_btn {
+
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    animation:  wiggle 2.5s linear infinite 1s;
+    
+}
+
+.section1_btn:hover {
+
+    animation-play-state: paused;
+    filter: brightness();
+    cursor: pointer;
+
+}
+
+@keyframes wiggle   {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
+
+/* --- section1_text--small --- */
+
+
+.section1_text--small {
+
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-color);
+    text-align: center;
+
+
+}
+
+
+
+/* --- section2 container --- */
+
+.main_section2 {
+    
+    background: linear-gradient(0deg, rgba(2,2,40,1) 0%, rgba(2,2,40,0) 40%, rgba(2,2,40,0) 60%, rgba(2,2,40,1) 100%),
+    url('../images/background-movies-series.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 50px 0px;
+    scroll-margin-top: 50px;
+    scroll-behavior: smooth;
+}
+
+
+.section2_container {
+
+    width: 100%;
+    gap: 40px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+
+    color: white;
+
+
+}
+
+/* --- section2 itens --- */
+
+.section2_txt {
+
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-indent: 0px;
+}
+
+
+.section2_cards {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    
+
+}
+
+/* --- section2 cards - itens --- */
+
+.card_item {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+   
+    padding: 40px 60px;
+    max-width: 450px;
+    min-height: 600px;
+
+    background: var(--card-bg-color);
+    border-radius: 8px;    
+
+}
+
+.card_item-btn {
+
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    background-position: initial;
+    
+    
+    outline: 3px solid transparent;
+
+     transition:  background 3s ease-out, outline 1s , transform 1s, background-position 2s ease;  
+
+}
+
+.card_item-btn:hover {
+
+    
+    transform: scale(1.05);
+    background: transparent;
+    background-position: right;
+    outline: 3px solid var(--secondary-color);
+    
+}
+
+
+/* --- section2 cards - plan txt --- */
+
+.card_plan {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+}
+
+.plan_value {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 5px;
+    color: var(--secondary-color);
+
+}
+
+.txt_color {
+
+    color: white;
+
+}
+
+
+/* --- section2 cards - plan description Lista --- */
+
+
+.plan_description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0px;
+
+
+
+}
+
+.description_item {
+
+    
+    text-align: left;
+    padding-left: 15px;
+
+}
+
+.description_item::marker {
+
+    content: "+";
+    font-size: 1.5rem;
+    margin-right: 20px;
+
+
+}
+    
+
+/* --- section3 - main  */
+.main_section3 {
+
+    width: 100%;
+    margin: 50px 0px;
+
+}
+
+/* --- section3 - container */
+
+.section3_container {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+   
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/* --- section3 - txt */
+
+.section3_txt {
+
+    color: white;
+    font-weight: 500;
+
+}
+
+/* --- section3 - cards container */
+
+
+
+
+
+.section3_cards {
+
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-flow: column ;
+    gap: 30px;
+
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    width: 100%;
+
+
+    
+    overflow: scroll;
+    overscroll-behavior: contain;
+    
+
+}
+
+
+
+
+/* --- section3 - cards GERAL */
+
+
+.cards {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+    align-self: center;
+
+   
+
+
+    min-height: 450px;
+    border-radius: 20px;
+
+    background-position: center;
+    background-size: cover;
+
+    outline: 3px solid transparent;
+    
+    transition: transform 1s ease, outline 1s ease;
+
+}
+
+.cards:hover {
+
+    transform: scale(1.02);
+    outline: 3px solid var(--secondary-color);
+
+}
+
+.cards_img {
+
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+ 
+
+.opacity--img:hover {   opacity: 0%; transition: 1.5s ease;}
+
+
+
+/* --- imagens de fundo dos cards por streaming  --- */
+
+.card_hbo {
+    background-image: url('../images/hbo-hover_0.webp');
+}
+
+
+.card_cn {
+    background-image: url('../images/CN-Hover.png');
+}
+
+.card_dc {
+    background-image: url('../images/DC-Hover.webp');
+}
+
+.card_hbomax {
+    background-image: url('../images/MAX-Hover.webp');
+}
+
+.card_ucl {
+    background-image: url('../images/UCL-Hover.webp');
+}
+
+.card_wb {
+    background-image: url('../images/WB-Hover.webp');
+}
+
+
+
+/* --- footer container --- */
+
+.footer_container {
+
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+
+}
+
+
+/* --- footer content --- */
+
+.footer_content {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* --- footer content  nav --- */
+
+.content_nav {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav_item {
+
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 1s ease;
+    font-size: 0.80rem;
+}
+
+.nav_item:link {
+
+    color: var(--link-color);
+}
+
+.nav_item:visited {
+     color: var(--tertiary-color);
+}
+
+.nav_item:hover {
+
+    cursor: pointer;
+    color: white;
+
+}
+
+/* --- footer content texto ---  */
+
+.content_txt {
+
+    font-size: 0.75rem;
+    color: var(--link-color);
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 8%;
+
+}
+
+
+/* --- footer content social  --- */
+
+
+.content_social {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin: 15px auto;
+
+}
+    
+    
+
+    }
+    
