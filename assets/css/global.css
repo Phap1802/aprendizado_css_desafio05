@@ -49,16 +49,7 @@
 
 
 
-    /* o site em tela media e pequena, estava dando uma tremidinha no scroll horizontal "x" dei uma pesquisada no stack overflow para ver como podia contornar e achei esse meio. */
-
-    /* link de consulta - https://pt.stackoverflow.com/questions/185347/como-esconder-barra-lateral-e-vertical-com-css    - uma das respostas mostra a opção */
-
-    /* esconde a barra de rolagem horizontal */
-    overflow-x: hidden;
-
-    /* https://pt.stackoverflow.com/questions/260545/touch-action-pra-que-serve-css */
-    /* so permite  a ação de pan  - arastar/deslizar  no eixo y vertical */
-    touch-action: pan-y;
+  
   }
 
 
